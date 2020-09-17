@@ -1,0 +1,50 @@
+import turtle
+
+wn = turtle.Screen()
+wn.title("I have no clue what this is going to be")
+wn.bgcolor("Light Blue")
+wn.setup(width=1920, height=1080)
+wn.tracer(0)
+
+# Player
+player = turtle.Turtle()
+player.speed(0)
+player.shape("square")
+player.color("white")
+player.penup()
+player.goto(-800, -450)
+
+# Function
+def player_up():
+    y = player.ycor()
+    y += 20
+    player.sety(y)
+
+
+def player_down():
+    y = player.ycor()
+    y -= 20
+    player.sety(y)
+
+
+def player_left():
+    x = player.xcor()
+    x -= 20
+    player.setx(x)
+
+def player_right():
+    x = player.xcor()
+    x += 20
+    player.setx(x)
+
+# Keybindings aka controls
+wn.listen()
+wn.onkeypress(player_up, "w")
+wn.onkeypress(player_down, "s")
+wn.onkeypress(player_left, "a")
+wn.onkeypress(player_right, "d")
+
+
+# Main game loop
+while True:
+    wn.update()
