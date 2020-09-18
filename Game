@@ -38,48 +38,61 @@ def player_right():
     x += 20
     player.setx(x)
 
-# Collision detection
-
-def isCollision():
-
 # MAZE BOARDER
-
 # 1
-    turtle.penup()
-turtle.hideturtle()
-turtle.penup()
-turtle.goto(-900, -500)
-turtle.width(5)
-turtle.color("black")
-turtle.pendown()
-turtle.forward(1800)
+one = turtle.Turtle()
+one.hideturtle()
+one.penup()
+one.goto(-900, -500)
+one.width(20)
+one.color("black")
+one.pendown()
+one.forward(1800)
 
 # 2
-turtle.penup()
-turtle.goto(900, -500)
-turtle.width(5)
-turtle.color("black")
-turtle.left(90)
-turtle.pendown()
-turtle.forward(1000)
+two = turtle.Turtle()
+two.hideturtle()
+two.penup()
+two.goto(900, -500)
+two.width(20)
+two.color("black")
+two.left(90)
+two.pendown()
+two.forward(1000)
 
 # 3
-turtle.penup()
-turtle.goto(900, 500)
-turtle.width(5)
-turtle.color("black")
-turtle.left(90)
-turtle.pendown()
-turtle.forward(1800)
+three = turtle.Turtle()
+three.hideturtle()
+three.penup()
+three.goto(900, 500)
+three.width(20)
+three.color("black")
+three.left(180)
+three.pendown()
+three.forward(1800)
 
-# 3
-turtle.penup()
-turtle.goto(-900, 500)
-turtle.width(5)
-turtle.color("black")
-turtle.left(90)
-turtle.pendown()
-turtle.forward(1000)
+# 4
+four = turtle.Turtle()
+four.hideturtle()
+four.penup()
+four.goto(-900, 500)
+four.width(20)
+four.color("black")
+four.right(90)
+four.pendown()
+four.forward(1000)
+
+# The Maze
+# wall 1
+wall_one = turtle.Turtle()
+wall_one.hideturtle()
+wall_one.penup()
+wall_one.goto(-800, -500)
+wall_one.width(20)
+wall_one.color("black")
+wall_one.left(90)
+wall_one.pendown()
+wall_one.forward(900)
 
 # Keybindings aka controls
 wn.listen()
@@ -95,14 +108,20 @@ while True:
 
 # Boarder Detection (Outer walls)
 
-    if player.xcor() > 888:
-        player.setx(888)
+    if player.xcor() > 880:
+        player.setx(880)
 
-    if player.xcor() < -888:
-        player.setx(-888)
+    if player.xcor() < -880:
+        player.setx(-880)
 
-    if player.ycor() < -488:
-        player.sety(-488)
+    if player.ycor() < -480:
+        player.sety(-480)
 
-    if player.ycor() > 488:
-        player.sety(488)
+    if player.ycor() > 480:
+        player.sety(480)
+
+    # wall 1 collision
+    if player.ycor() > 900 and player.xcor() < -420 and player.xcor > -400:
+        player.setx(-420)
+
+
