@@ -1,4 +1,5 @@
 import turtle
+import time
 
 wn = turtle.Screen()
 wn.title("I have no clue what this is going to be")
@@ -12,7 +13,7 @@ player.speed(0)
 player.shape("square")
 player.color("white")
 player.penup()
-player.goto(-800, -450)
+player.goto(-850, -450)
 
 # Function
 def player_up():
@@ -37,6 +38,49 @@ def player_right():
     x += 20
     player.setx(x)
 
+# Collision detection
+
+def isCollision():
+
+# MAZE BOARDER
+
+# 1
+    turtle.penup()
+turtle.hideturtle()
+turtle.penup()
+turtle.goto(-900, -500)
+turtle.width(5)
+turtle.color("black")
+turtle.pendown()
+turtle.forward(1800)
+
+# 2
+turtle.penup()
+turtle.goto(900, -500)
+turtle.width(5)
+turtle.color("black")
+turtle.left(90)
+turtle.pendown()
+turtle.forward(1000)
+
+# 3
+turtle.penup()
+turtle.goto(900, 500)
+turtle.width(5)
+turtle.color("black")
+turtle.left(90)
+turtle.pendown()
+turtle.forward(1800)
+
+# 3
+turtle.penup()
+turtle.goto(-900, 500)
+turtle.width(5)
+turtle.color("black")
+turtle.left(90)
+turtle.pendown()
+turtle.forward(1000)
+
 # Keybindings aka controls
 wn.listen()
 wn.onkeypress(player_up, "w")
@@ -48,3 +92,17 @@ wn.onkeypress(player_right, "d")
 # Main game loop
 while True:
     wn.update()
+
+# Boarder Detection (Outer walls)
+
+    if player.xcor() > 888:
+        player.setx(888)
+
+    if player.xcor() < -888:
+        player.setx(-888)
+
+    if player.ycor() < -488:
+        player.sety(-488)
+
+    if player.ycor() > 488:
+        player.sety(488)
