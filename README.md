@@ -8,4 +8,4 @@ Currently I have made the basic canvas (1920x1080) of the game and have created 
 1. Collision detection for the rest of the maze walls
 2. After that is done I will add the teleporting system that will detect when you reached the end of the level and move you to the next level
 3. I will then add the timer which will keep track of your current time (Will be displayed on the screen somewhere) and it will also tell you your time when you beat the game.
-4. Finally I will create more level (Probably around 5 for now) and that will probably be about it. I might change around the asthenic of game to make it prettier or something, but I don't plan to add much more than listed here. 
+4. Finally I will create more levels (Probably around 5 for now) and that will probably be about it. I might change around the asthenic of game to make it prettier or something, but I don't plan to add much more than listed here. 
