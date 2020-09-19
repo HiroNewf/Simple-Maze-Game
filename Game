@@ -345,6 +345,23 @@ while True:
     if player.ycor() > 480:
         player.sety(480)
 
-    # wall 1 collision (doesn't work yet)
-    if player.ycor() < 400 and player.xcor() < -900 and player.xcor > -920:
-        player.setx(-900)
+    # wall 1 collision
+    if player.ycor() < 400 and player.xcor() < -795 and player.xcor() > -820:
+        player.setx(-820)
+
+    if player.ycor() < 400 and player.xcor() < -775 and player.xcor() > -800:
+        player.setx(-775)
+
+    # wall 2 collision
+    if player.ycor() > -400 and player.xcor() < -695 and player.xcor() > -720:
+        player.setx(-720)
+
+    if player.ycor() > -400 and player.xcor() < -675 and player.xcor() > -700:
+        player.setx(-675)
+
+    # wall 3 collision (Doesn't work)
+    if player.ycor() > 400 and player.xcor() < -595 and player.xcor() > -620:
+        player.setx(-620)
+
+    if player.ycor() > 400 and player.xcor() < -575 and player.xcor() > -600:
+        player.setx(-575)
