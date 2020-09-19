@@ -345,8 +345,6 @@ while True:
     if player.ycor() > 480:
         player.sety(480)
 
-    # wall 1 collision
-    if player.ycor() > 900 and player.xcor() < -420 and player.xcor > -400:
-        player.setx(-420)
-
-
+    # wall 1 collision (doesn't work yet)
+    if player.ycor() < 400 and player.xcor() < -900 and player.xcor > -920:
+        player.setx(-900)
