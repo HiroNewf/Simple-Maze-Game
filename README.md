@@ -2,7 +2,12 @@
 This is a work in progress, but my goal is to make this a maze game. There will be different levels and each time you finish one maze you will be teleported to the next level of the game. Once you finish all levels the game will tell you your time (how long it took you to finish the mazes) and restart you from the beginning. 
 
 # What is currently completed
-Currently I have made the basic canvas (1920x1080) of the game and have created the player. The player is a simple square and it can move by using "w", "a", "s", and "d". The boarder walls are also there and you cannot go through them due to the collision detection in place and I have mapped out the first maze 
+1. Base canvas
+2. Playing and player movements
+3. Collision detection 
+4. Boarder walls 
+5. The first maze
+6. A start and end 
 
 # What I am going to add next
 1. Add the teleporting system that will detect when you reached the end of the level and move you to the next level
