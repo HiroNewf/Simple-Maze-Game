@@ -1,6 +1,7 @@
 import turtle
 import time
 
+# Screen
 wn = turtle.Screen()
 wn.title("I have no clue what this is going to be")
 wn.bgcolor("Light Blue")
@@ -359,9 +360,128 @@ while True:
     if player.ycor() > -400 and player.xcor() < -675 and player.xcor() > -700:
         player.setx(-675)
 
-    # wall 3 collision (Doesn't work)
-    if player.ycor() > 400 and player.xcor() < -595 and player.xcor() > -620:
+    # wall 3 collision
+    if player.ycor() < 400 and player.xcor() < -595 and player.xcor() > -620:
         player.setx(-620)
 
-    if player.ycor() > 400 and player.xcor() < -575 and player.xcor() > -600:
+    if player.ycor() < 400 and player.xcor() < -575 and player.xcor() > -600:
         player.setx(-575)
+
+    # wall 4 collision
+    if player.ycor() > -400 and player.xcor() < -495 and player.xcor() > -520:
+        player.setx(-520)
+
+    if player.ycor() > -400 and player.xcor() < -475 and player.xcor() > -500:
+        player.setx(-475)
+
+    # wall 5 collision
+    if player.ycor() < 400 and player.xcor() < -395 and player.xcor() > -420:
+        player.setx(-420)
+
+    if player.ycor() < 400 and player.xcor() < -375 and player.xcor() > -400:
+        player.setx(-375)
+
+    # wall 6 collision
+    if player.ycor() > -400 and player.xcor() < -295 and player.xcor() > -320:
+        player.setx(-320)
+
+    if player.ycor() > -400 and player.xcor() < -275 and player.xcor() > -300:
+        player.setx(-275)
+
+    # wall 7 collision
+    if player.ycor() < 400 and player.xcor() < -195 and player.xcor() > -220:
+        player.setx(-220)
+
+    if player.ycor() < 400 and player.xcor() < -175 and player.xcor() > -200:
+        player.setx(-175)
+
+    # wall 8 collision
+    if player.ycor() > -400 and player.xcor() < -95 and player.xcor() > -120:
+        player.setx(-120)
+
+    if player.ycor() > -400 and player.xcor() < -75 and player.xcor() > -100:
+        player.setx(-75)
+
+    # wall 9 collision
+    if player.ycor() < 400 and player.xcor() < 5 and player.xcor() > -20:
+        player.setx(-20)
+
+    if player.ycor() < 400 and player.xcor() < 25 and player.xcor() > -0:
+        player.setx(25)
+
+    # wall 10 collision
+    if player.ycor() > -400 and player.xcor() < 105 and player.xcor() > 80:
+        player.setx(80)
+
+    if player.ycor() > -400 and player.xcor() < 125 and player.xcor() > 100:
+        player.setx(125)
+
+    # wall 11 collision
+    if player.ycor() < 400 and player.xcor() < 205 and player.xcor() > 180:
+        player.setx(180)
+
+    if player.ycor() < 400 and player.xcor() < 225 and player.xcor() > 200:
+        player.setx(225)
+
+    # wall 12 collision
+    if player.ycor() > -400 and player.xcor() < 305 and player.xcor() > 280:
+        player.setx(280)
+
+    if player.ycor() > -400 and player.xcor() < 325 and player.xcor() > 300:
+        player.setx(325)
+
+    # wall 13 collision
+    if player.ycor() < 400 and player.xcor() < 405 and player.xcor() > 380:
+        player.setx(380)
+
+    if player.ycor() < 400 and player.xcor() < 425 and player.xcor() > 400:
+        player.setx(425)
+
+    # wall 14 collision
+    if player.ycor() > -400 and player.xcor() < 505 and player.xcor() > 480:
+        player.setx(480)
+
+    if player.ycor() > -400 and player.xcor() < 525 and player.xcor() > 500:
+        player.setx(525)
+
+    # wall 15 collision
+    if player.ycor() < 400 and player.xcor() < 605 and player.xcor() > 580:
+        player.setx(580)
+
+    if player.ycor() < 400 and player.xcor() < 625 and player.xcor() > 600:
+        player.setx(625)
+
+    # wall 16 collision
+    if player.ycor() > -400 and player.xcor() < 705 and player.xcor() > 680:
+        player.setx(680)
+
+    if player.ycor() > -400 and player.xcor() < 725 and player.xcor() > 700:
+        player.setx(725)
+
+    # wall 17 collision
+    if player.ycor() < 400 and player.xcor() < 805 and player.xcor() > 780:
+        player.setx(780)
+
+    if player.ycor() < 400 and player.xcor() < 825 and player.xcor() > 800:
+        player.setx(825)
+
+    # wall 18 collision
+    if player.ycor() > -400 and player.xcor() < 905 and player.xcor() > 880:
+        player.setx(880)
+
+    if player.ycor() > -400 and player.xcor() < 925 and player.xcor() > 900:
+        player.setx(925)
+
+    # wall 19 collision
+    if player.ycor() < 400 and player.xcor() < 1005 and player.xcor() > 980:
+        player.setx(980)
+
+    if player.ycor() < 400 and player.xcor() < 1025 and player.xcor() > 1000:
+        player.setx(1025)
+
+    # wall 20 collision
+    if player.ycor() < 400 and player.xcor() < 1105 and player.xcor() > 1080:
+        player.setx(1080)
+
+    if player.ycor() < 400 and player.xcor() < 1125 and player.xcor() > 1100:
+        player.setx(1125)
