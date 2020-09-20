@@ -3,7 +3,7 @@ This is a work in progress, but my goal is to make this a maze game. There will 
 
 # What is currently completed
 1. Base canvas
-2. Playing and player movements
+2. Player and player movements
 3. Collision detection 
 4. Boarder walls 
 5. The first maze
