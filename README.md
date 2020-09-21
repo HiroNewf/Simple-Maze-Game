@@ -1,5 +1,5 @@
 # Simple-Maze-Game (Not Finished)
-Probably just going to ditch this and work on something else. It could be finished, but I am getting rather bored with it and it is rather repeditive making the mazes and adding the boarder detection. If you want use this as a base/guide for a maze related game you are coding go for. Just like credit me in the Readme or something. 
+Probably just going to ditch this and work on something else. It could be finished, but I am getting rather bored with it and it is rather repeditive making the mazes and adding the boarder detection. If you want use this as a base/guide for a maze related game you are coding go for it. Just like credit me in the Readme or something. 
 
 # What is completed
 1. Base canvas
