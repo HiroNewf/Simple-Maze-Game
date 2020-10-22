@@ -1,5 +1,6 @@
 import turtle
 import time
+import sys
 
 # Screen
 wn = turtle.Screen()
@@ -31,6 +32,8 @@ player.shape("square")
 player.color("white")
 player.penup()
 player.goto(-850, -450)
+
+# Text
 
 # Function
 def player_up():
@@ -339,12 +342,15 @@ while True:
 
     if player.xcor() < -880:
         player.setx(-880)
-
-    if player.ycor() < -480:
+#                                   v
+    if player.ycor() < -480 and player.xcor() < -880:
         player.sety(-480)
 
     if player.ycor() > 480:
         player.sety(480)
+#            v
+    if player.ycor() < -500:
+        player.setx(880)
 
     # wall 1 collision
     if player.ycor() < 400 and player.xcor() < -795 and player.xcor() > -820:
@@ -486,6 +492,9 @@ while True:
     if player.ycor() < 400 and player.xcor() < 1125 and player.xcor() > 1100:
         player.setx(1125)
 
+    # end of the level (Just a test and doesn't work yet)
+    if 850 < player.xcor() < 854 and -450 < player.ycor() < -454:
+        player.setx(1125)
 
 
 
